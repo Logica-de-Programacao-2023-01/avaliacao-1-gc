@@ -17,3 +17,38 @@ func DivideWatermelon(weight int) (bool, error) {
 	// Seu código aqui
 	return false, nil
 }
+
+package main
+
+import "fmt"
+
+func encontrarSomas(x int) {
+	for i := 0; i <= x; i += 2 {
+		for j := i; j <= x; j += 2 {
+			if i+j == x {
+				fmt.Println(i, "+", j, "=", x)
+			}
+		}
+	}
+}
+
+func main() {
+	var numero int
+	fmt.Print("Qual é o valor do peso da melancia?")
+	fmt.Scan(&numero)
+	if numero <= 0 {
+		fmt.Println("Peso inválido.")
+	}
+	if numero/2 == 1 {
+		fmt.Println("Não é possível dividir a melancia da forma desejada")
+	}
+	for numero/2 == 0 {
+		for i := 0; i <= numero; i += 2 {
+			for j := i; j <= numero; j += 2 {
+				if i+j == numero {
+					fmt.Println(i, "+", j, "=", numero)
+				}
+			}
+		}
+	}
+}
