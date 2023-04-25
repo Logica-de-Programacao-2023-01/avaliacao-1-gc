@@ -16,3 +16,19 @@ func ProblemsSolved(answers [][3]bool) int {
 	// Seu código aqui
 	return 0
 }
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt. Print("Digite o número de linhas: ")
+	fmt.Scan(&n)
+	
+	matriz := make(chan int, n)
+	for i := range matriz {
+		matriz[i] = make(chan int, 3)
+	}
+	
+	fmt. Println(matriz)
+}
