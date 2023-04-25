@@ -10,6 +10,31 @@ package q4
 //Caso a lista possua apenas um elemento, a função deve retornar 3.
 
 func ClassifyPrices(prices []int) (int, error) {
-	// Seu código aqui
+	package main
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Print("Qual é o valor do primeiro número?")
+	fmt.Scan(&x)
+	var y int
+	fmt.Print("Qual é o valor do segundo número?")
+	fmt.Scan(&y)
+	var z int
+	fmt.Print("Qual é o valor do terceiro número?")
+	fmt.Scan(&z)
+	var w int
+	fmt.Print("Qual é o valor do quarto número?")
+	fmt.Scan(&w)
+	var m int
+	fmt.Print("Qual é o valor do quinto número?")
+	fmt.Scan(&m)
+	if x<y<z<w<m
+		fmt.Println("1")
+	if y, z, w, m==0
+		fmt.Println("3")
+}
+
 	return 0, nil
 }
